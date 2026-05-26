@@ -29,15 +29,17 @@ body {
 /* BOTÃO */
 
 .btn-purple {
-  background: #9b5cff;
-  color: black;
+  background: #6d28d9;
+  color: white;
   border: none;
-  padding: 10px 25px;
+  padding: 12px 28px;
   border-radius: 10px;
+  transition: 0.3s ease;
 }
 
 .btn-purple:hover {
-  background: #7d3cff;
+  background: white;
+  color: #5b21b6;
 }
 
 /* HERO */
@@ -70,7 +72,7 @@ body {
 }
 
 .hero p {
-  color: #cfcfcf;
+  color: #ffffff;
   margin: 20px 0;
   font-size: 1.2rem;
 }
