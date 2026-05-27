@@ -1,12 +1,12 @@
 import hero from '../assets/hero.png'
 
-function Hero() {
 
-  return (
+function Hero() { 
 
-    <div>
+    return ( 
 
-      <section className="hero">
+        <div> 
+        <section className="hero">
 
         <div className="overlay">
 
@@ -17,8 +17,8 @@ function Hero() {
               <div className="col-lg-6">
 
                 <h1>
-                  Assistência Técnica{" "}
-                  <span>Rápida e Confiável</span>
+                  Assistência Técnica{""}
+                  <span> Rápida e Confiável</span>
                 </h1>
 
                 <p>
@@ -48,10 +48,10 @@ function Hero() {
         </div>
 
       </section>
-
     </div>
+    )
+     
 
-  )
 }
 
 export default Hero
