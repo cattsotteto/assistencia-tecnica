@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import Services from './components/Services'
+import Appointment from './components/Appointment'
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
       <Hero />
 
       <Services />
+
+      <Appointment />
 
       <Footer />
 
