@@ -14,7 +14,7 @@ function Appointment() {
 
         e.preventDefault()
 
-        console dados = { 
+        const dados = { 
             nome,
             telefone,
             modelo,
