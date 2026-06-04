@@ -10,18 +10,31 @@ function Appointment() {
     const [problema, setProblema] = useState('')
     const [mensagem, setMensagem] = useState('')
 
-    function enviarFormulario(e) {
+     async function enviarFormulario(e) {
 
         e.preventDefault()
 
-        console.log({
+        console dados = { 
             nome,
             telefone,
             modelo,
             problema
-        })
+        }
+        
+        const resposta = await fetch(
+            "http://localhost:8080/agendamentos",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(dados)
+            }
+        )
 
-        setMensagem('Agendamento enviado com sucesso!')
+        if (resposta.ok) {
+             setMensagem('Agendamento enviado com sucesso!')
+        }
     }
 
     return (
